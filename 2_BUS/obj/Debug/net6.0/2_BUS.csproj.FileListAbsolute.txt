@@ -1,0 +1,17 @@
+E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.deps.json
+E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.runtimeconfig.json
+E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.dll
+E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.pdb
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.csproj.AssemblyReference.cache
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfoInputs.cache
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfo.cs
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.csproj.CoreCompileInputs.cache
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.csproj.CopyComplete
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.dll
+E:\GITHUB\2_BUS\obj\Debug\net6.0\refint\2_BUS.dll
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.pdb
+E:\GITHUB\2_BUS\obj\Debug\net6.0\2_BUS.genruntimeconfig.cache
+E:\GITHUB\2_BUS\obj\Debug\net6.0\ref\2_BUS.dll
+E:\GITHUB\2_BUS\bin\Debug\net6.0\_1_DAL.dll
+E:\GITHUB\2_BUS\bin\Debug\net6.0\_1_DAL.pdb
