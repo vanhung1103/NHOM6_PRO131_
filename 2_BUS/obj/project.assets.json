@@ -164,11 +164,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/6.0.15": {
+      "Microsoft.EntityFrameworkCore.SqlServer/6.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.1.4",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.15"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.16"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -788,7 +788,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
         },
         "compile": {
           "bin/placeholder/_1_DAL.dll": {}
@@ -1043,17 +1043,17 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/6.0.15": {
-      "sha512": "sNptOQ/eYXoj+IR9nysdD0jzF8mtYbrxYmhZ6s2OXeezGIoLs+gHreBWBw7tfpcC/Ezl/NUceCRbZ70XUtPA3g==",
+    "Microsoft.EntityFrameworkCore.SqlServer/6.0.16": {
+      "sha512": "xqJXDqjq8ArJzwUZjSaBsbSFZIhsrTf1oLxoOWFN+p9itCeFJvJ0AZkbGuzKt6Vq/ZJ4YkkdIrCj451RAwM5Mw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/6.0.15",
+      "path": "microsoft.entityframeworkcore.sqlserver/6.0.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.6.0.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.6.0.16.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -2028,7 +2028,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.16",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.16",
       "_1_DAL >= 1.0.0"
     ]
@@ -2039,11 +2039,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GITHUB\\2_BUS\\2_BUS.csproj",
+      "projectUniqueName": "E:\\gitt\\2_BUS\\2_BUS.csproj",
       "projectName": "2_BUS",
-      "projectPath": "E:\\GITHUB\\2_BUS\\2_BUS.csproj",
+      "projectPath": "E:\\gitt\\2_BUS\\2_BUS.csproj",
       "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
-      "outputPath": "E:\\GITHUB\\2_BUS\\obj\\",
+      "outputPath": "E:\\gitt\\2_BUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2060,8 +2060,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\GITHUB\\1_DAL\\_1_DAL.csproj": {
-              "projectPath": "E:\\GITHUB\\1_DAL\\_1_DAL.csproj"
+            "E:\\gitt\\1_DAL\\_1_DAL.csproj": {
+              "projectPath": "E:\\gitt\\1_DAL\\_1_DAL.csproj"
             }
           }
         }
@@ -2088,7 +2088,7 @@
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[6.0.15, )"
+            "version": "[6.0.16, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
