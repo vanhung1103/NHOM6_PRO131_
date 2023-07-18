@@ -1,6 +1,6 @@
 ﻿namespace _3_PL.Views
 {
-    partial class Frm_Order
+    partial class Frm_ForgotPass
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Frm_Order";
+            this.Text = "Frm_ForgotPass";
         }
 
         #endregion

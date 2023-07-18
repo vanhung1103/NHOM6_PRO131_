@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FontAwesome.Sharp/5.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FontAwesome.Sharp.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -787,6 +796,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "FontAwesome.Sharp": "5.8.2",
           "Microsoft.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
         },
@@ -800,6 +810,18 @@
     }
   },
   "libraries": {
+    "FontAwesome.Sharp/5.8.2": {
+      "sha512": "qcDZsG1A4ZWJeAei+mb98f0f+FGQq+BNwGtIBPeWY5wHcevuJLIfJz19mS2ueLm5QG6bbIgsQR/u8KiWVWAzuA==",
+      "type": "package",
+      "path": "fontawesome.sharp/5.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.5.8.2.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net40/FontAwesome.Sharp.dll"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2026,6 +2048,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FontAwesome.Sharp >= 5.8.2",
       "Microsoft.EntityFrameworkCore >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
@@ -2076,6 +2099,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[5.8.2, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.16, )"
@@ -2116,5 +2143,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FontAwesome.Sharp 5.8.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FontAwesome.Sharp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

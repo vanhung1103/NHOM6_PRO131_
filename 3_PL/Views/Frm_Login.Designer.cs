@@ -34,6 +34,8 @@
             txt_password = new TextBox();
             label3 = new Label();
             btn_login = new Button();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // txt_username
@@ -79,18 +81,39 @@
             // 
             // btn_login
             // 
-            btn_login.Location = new Point(328, 358);
+            btn_login.Location = new Point(359, 378);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(112, 34);
             btn_login.TabIndex = 5;
             btn_login.Text = "Login";
             btn_login.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(328, 320);
+            label4.Name = "label4";
+            label4.Size = new Size(156, 25);
+            label4.TabIndex = 6;
+            label4.Text = "Forgot password?";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(499, 320);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 25);
+            label5.TabIndex = 7;
+            label5.Text = "SignUp";
+            label5.Click += label5_Click;
+            // 
             // Frm_Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(btn_login);
             Controls.Add(label3);
             Controls.Add(txt_password);
@@ -111,5 +134,7 @@
         private TextBox txt_password;
         private Label label3;
         private Button btn_login;
+        private Label label4;
+        private Label label5;
     }
 }

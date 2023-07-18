@@ -16,5 +16,46 @@ namespace _3_PL.Views
         {
             InitializeComponent();
         }
+        public Form activeForm = null;
+        private void OpenChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_Product());
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_User());
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_Bill());
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_Role());
+        }
     }
 }
