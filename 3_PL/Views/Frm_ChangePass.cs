@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _3_PL.Views
 {
-    public partial class Frm_Order : Form
+    public partial class Frm_ChangePass : Form
     {
-        public Frm_Order()
+        public Frm_ChangePass()
         {
             InitializeComponent();
         }

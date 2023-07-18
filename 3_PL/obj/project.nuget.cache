@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Gewp1X8LAEhrN3Yc+49vSjfj7foF49V4pLC9uhc/gg0kfEaWXxw5cMpoYTB2ii7QE+O048/4Ihl5FP+P//KhRw==",
+  "dgSpecHash": "aH/wZVmDvwjo1yu9Wb9bXUWP2rCTCizsWoyb6Bg7ivd63ir1Q5YPj8ymQIxK0N9PRxL9hhx/gluJdtpx5i7ESQ==",
   "success": true,
   "projectFilePath": "E:\\gitt\\3_PL\\3_PL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vanhu\\.nuget\\packages\\fontawesome.sharp\\5.8.2\\fontawesome.sharp.5.8.2.nupkg.sha512",
     "C:\\Users\\vanhu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vanhu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\vanhu\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -48,5 +49,16 @@
     "C:\\Users\\vanhu\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\vanhu\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FontAwesome.Sharp 5.8.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FontAwesome.Sharp",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

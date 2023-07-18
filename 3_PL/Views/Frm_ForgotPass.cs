@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _3_PL.Views
 {
-    public partial class Frm_Pay : Form
+    public partial class Frm_ForgotPass : Form
     {
-        public Frm_Pay()
+        public Frm_ForgotPass()
         {
             InitializeComponent();
         }

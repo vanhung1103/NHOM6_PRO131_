@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "FontAwesome.Sharp/5.8.2": {
+        "runtime": {
+          "lib/net40/FontAwesome.Sharp.dll": {
+            "assemblyVersion": "5.8.2.0",
+            "fileVersion": "5.8.2.0"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -579,6 +587,13 @@
     }
   },
   "libraries": {
+    "FontAwesome.Sharp/5.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qcDZsG1A4ZWJeAei+mb98f0f+FGQq+BNwGtIBPeWY5wHcevuJLIfJz19mS2ueLm5QG6bbIgsQR/u8KiWVWAzuA==",
+      "path": "fontawesome.sharp/5.8.2",
+      "hashPath": "fontawesome.sharp.5.8.2.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
