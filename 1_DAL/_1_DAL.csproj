@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Responsitory\**" />
+    <EmbeddedResource Remove="Responsitory\**" />
+    <None Remove="Responsitory\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="5.8.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
@@ -22,8 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IResponsitory\" />
-    <Folder Include="Responsitory\" />
+    <Folder Include="IResponsitories\" />
+    <Folder Include="Responsitories\" />
   </ItemGroup>
 
 </Project>

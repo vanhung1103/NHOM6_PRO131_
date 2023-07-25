@@ -2041,11 +2041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\gitt\\1_DAL\\_1_DAL.csproj",
+      "projectUniqueName": "E:\\Git\\1_DAL\\_1_DAL.csproj",
       "projectName": "_1_DAL",
-      "projectPath": "E:\\gitt\\1_DAL\\_1_DAL.csproj",
+      "projectPath": "E:\\Git\\1_DAL\\_1_DAL.csproj",
       "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
-      "outputPath": "E:\\gitt\\1_DAL\\obj\\",
+      "outputPath": "E:\\Git\\1_DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
