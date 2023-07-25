@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="IResponsitories\**" />
-    <Compile Remove="Responsitories\**" />
-    <EmbeddedResource Remove="IResponsitories\**" />
-    <EmbeddedResource Remove="Responsitories\**" />
-    <None Remove="IResponsitories\**" />
-    <None Remove="Responsitories\**" />
+    <Compile Remove="IResponsitoriess\**" />
+    <Compile Remove="Responsitoriess\**" />
+    <EmbeddedResource Remove="IResponsitoriess\**" />
+    <EmbeddedResource Remove="Responsitoriess\**" />
+    <None Remove="IResponsitoriess\**" />
+    <None Remove="Responsitoriess\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,11 +28,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="IResponsitoriess\" />
-    <Folder Include="Responsitoriess\" />
   </ItemGroup>
 
 </Project>

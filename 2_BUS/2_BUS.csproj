@@ -9,14 +9,17 @@
 
   <ItemGroup>
     <Compile Remove="IServicess\**" />
+    <Compile Remove="IService\**" />
+    <Compile Remove="Sercvice\**" />
     <Compile Remove="Servicess\**" />
-    <Compile Remove="Services\**" />
     <EmbeddedResource Remove="IServicess\**" />
+    <EmbeddedResource Remove="IService\**" />
+    <EmbeddedResource Remove="Sercvice\**" />
     <EmbeddedResource Remove="Servicess\**" />
-    <EmbeddedResource Remove="Services\**" />
     <None Remove="IServicess\**" />
+    <None Remove="IService\**" />
+    <None Remove="Sercvice\**" />
     <None Remove="Servicess\**" />
-    <None Remove="Services\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,11 +38,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\1_DAL\_1_DAL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="IService\" />
-    <Folder Include="Sercvice\" />
   </ItemGroup>
 
 </Project>
