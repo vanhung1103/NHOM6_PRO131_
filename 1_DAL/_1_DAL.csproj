@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IResponsitory\" />
-    <Folder Include="Responsitory\" />
+    <Folder Include="IResponsitoriess\" />
+    <Folder Include="Responsitoriess\" />
   </ItemGroup>
 
 </Project>
