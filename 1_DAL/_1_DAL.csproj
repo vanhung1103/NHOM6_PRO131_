@@ -8,9 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Responsitory\**" />
-    <EmbeddedResource Remove="Responsitory\**" />
-    <None Remove="Responsitory\**" />
+    <Compile Remove="IResponsitories\**" />
+    <Compile Remove="Responsitories\**" />
+    <EmbeddedResource Remove="IResponsitories\**" />
+    <EmbeddedResource Remove="Responsitories\**" />
+    <None Remove="IResponsitories\**" />
+    <None Remove="Responsitories\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IResponsitories\" />
-    <Folder Include="Responsitories\" />
+    <Folder Include="IResponsitory\" />
+    <Folder Include="Responsitory\" />
   </ItemGroup>
 
 </Project>
