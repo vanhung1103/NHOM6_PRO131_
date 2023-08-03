@@ -32,3 +32,11 @@ E:\gitt\2_BUS\obj\Debug\net6.0\refint\2_BUS.dll
 E:\gitt\2_BUS\obj\Debug\net6.0\2_BUS.pdb
 E:\gitt\2_BUS\obj\Debug\net6.0\2_BUS.genruntimeconfig.cache
 E:\gitt\2_BUS\obj\Debug\net6.0\ref\2_BUS.dll
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.csproj.AssemblyReference.cache
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.GeneratedMSBuildEditorConfig.editorconfig
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfoInputs.cache
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfo.cs
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.csproj.CoreCompileInputs.cache
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.dll
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\refint\2_BUS.dll
+E:\gittt\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.pdb
