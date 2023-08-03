@@ -2062,11 +2062,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\gittt\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
+      "projectUniqueName": "E:\\gitt2\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
       "projectName": "2_BUS",
-      "projectPath": "E:\\gittt\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
+      "projectPath": "E:\\gitt2\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
       "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
-      "outputPath": "E:\\gittt\\NHOM6_PRO131_\\2_BUS\\obj\\",
+      "outputPath": "E:\\gitt2\\NHOM6_PRO131_\\2_BUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2083,8 +2083,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\gittt\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
-              "projectPath": "E:\\gittt\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj"
+            "E:\\gitt2\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
+              "projectPath": "E:\\gitt2\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj"
             }
           }
         }

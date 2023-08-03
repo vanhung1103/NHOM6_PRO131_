@@ -35,23 +35,23 @@
             groupBox3 = new GroupBox();
             dataGridView1 = new DataGridView();
             groupBox4 = new GroupBox();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            label6 = new Label();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            textBox4 = new TextBox();
-            label7 = new Label();
-            textBox6 = new TextBox();
-            label4 = new Label();
-            textBox3 = new TextBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label2 = new Label();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             label3 = new Label();
             textBox2 = new TextBox();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            label4 = new Label();
+            textBox3 = new TextBox();
+            label5 = new Label();
+            textBox4 = new TextBox();
+            label6 = new Label();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            label7 = new Label();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -142,98 +142,53 @@
             groupBox4.Size = new Size(300, 666);
             groupBox4.TabIndex = 6;
             groupBox4.TabStop = false;
+            groupBox4.Text = "groupBox4";
             // 
-            // iconButton3
+            // textBox1
             // 
-            iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton3.IconColor = Color.Black;
-            iconButton3.IconSize = 16;
-            iconButton3.Location = new Point(169, 608);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Rotation = 0D;
-            iconButton3.Size = new Size(125, 42);
-            iconButton3.TabIndex = 14;
-            iconButton3.Text = "In";
-            iconButton3.UseVisualStyleBackColor = true;
+            textBox1.Location = new Point(40, 71);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(254, 31);
+            textBox1.TabIndex = 0;
             // 
-            // iconButton2
+            // label1
             // 
-            iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton2.IconColor = Color.Black;
-            iconButton2.IconSize = 16;
-            iconButton2.Location = new Point(19, 608);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Rotation = 0D;
-            iconButton2.Size = new Size(125, 42);
-            iconButton2.TabIndex = 13;
-            iconButton2.Text = "Thanh Toán";
-            iconButton2.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(138, 25);
+            label1.TabIndex = 1;
+            label1.Text = "Tên Khách Hàng";
             // 
-            // label6
+            // dateTimePicker1
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 304);
-            label6.Name = "label6";
-            label6.Size = new Size(138, 25);
-            label6.TabIndex = 12;
-            label6.Text = "Tên Khách Hàng";
+            dateTimePicker1.Location = new Point(40, 174);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(254, 31);
+            dateTimePicker1.TabIndex = 2;
             // 
-            // textBox5
+            // label2
             // 
-            textBox5.Location = new Point(40, 332);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(254, 31);
-            textBox5.TabIndex = 11;
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 146);
+            label2.Name = "label2";
+            label2.Size = new Size(88, 25);
+            label2.TabIndex = 3;
+            label2.Text = "Ngày Tạo";
             // 
-            // label5
+            // iconButton1
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(0, 461);
-            label5.Name = "label5";
-            label5.Size = new Size(154, 25);
-            label5.TabIndex = 10;
-            label5.Text = "Khách Thanh Toán";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(40, 489);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(254, 31);
-            textBox4.TabIndex = 9;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(0, 523);
-            label7.Name = "label7";
-            label7.Size = new Size(118, 25);
-            label7.TabIndex = 8;
-            label7.Text = "Tiền Hoàn Lại";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(40, 551);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(254, 31);
-            textBox6.TabIndex = 7;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(0, 379);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 25);
-            label4.TabIndex = 8;
-            label4.Text = "Khách Cần Trả";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(40, 407);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(254, 31);
-            textBox3.TabIndex = 7;
+            iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconSize = 16;
+            iconButton1.Location = new Point(102, 244);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Rotation = 0D;
+            iconButton1.Size = new Size(125, 42);
+            iconButton1.TabIndex = 4;
+            iconButton1.Text = "Tạo hóa Đơn";
+            iconButton1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -251,51 +206,97 @@
             textBox2.Size = new Size(254, 31);
             textBox2.TabIndex = 5;
             // 
-            // iconButton1
+            // label4
             // 
-            iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconSize = 16;
-            iconButton1.Location = new Point(102, 244);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Rotation = 0D;
-            iconButton1.Size = new Size(125, 42);
-            iconButton1.TabIndex = 4;
-            iconButton1.Text = "Tạo hóa Đơn";
-            iconButton1.UseVisualStyleBackColor = true;
+            label4.AutoSize = true;
+            label4.Location = new Point(0, 379);
+            label4.Name = "label4";
+            label4.Size = new Size(121, 25);
+            label4.TabIndex = 8;
+            label4.Text = "Khách Cần Trả";
             // 
-            // label2
+            // textBox3
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 146);
-            label2.Name = "label2";
-            label2.Size = new Size(88, 25);
-            label2.TabIndex = 3;
-            label2.Text = "Ngày Tạo";
+            textBox3.Location = new Point(40, 407);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(254, 31);
+            textBox3.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // label5
             // 
-            dateTimePicker1.Location = new Point(40, 174);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(254, 31);
-            dateTimePicker1.TabIndex = 2;
+            label5.AutoSize = true;
+            label5.Location = new Point(0, 461);
+            label5.Name = "label5";
+            label5.Size = new Size(154, 25);
+            label5.TabIndex = 10;
+            label5.Text = "Khách Thanh Toán";
             // 
-            // label1
+            // textBox4
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(138, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Tên Khách Hàng";
+            textBox4.Location = new Point(40, 489);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(254, 31);
+            textBox4.TabIndex = 9;
             // 
-            // textBox1
+            // label6
             // 
-            textBox1.Location = new Point(40, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(254, 31);
-            textBox1.TabIndex = 0;
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 304);
+            label6.Name = "label6";
+            label6.Size = new Size(138, 25);
+            label6.TabIndex = 12;
+            label6.Text = "Tên Khách Hàng";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(40, 332);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(254, 31);
+            textBox5.TabIndex = 11;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(40, 551);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(254, 31);
+            textBox6.TabIndex = 7;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(0, 523);
+            label7.Name = "label7";
+            label7.Size = new Size(118, 25);
+            label7.TabIndex = 8;
+            label7.Text = "Tiền Hoàn Lại";
+            // 
+            // iconButton2
+            // 
+            iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton2.IconColor = Color.Black;
+            iconButton2.IconSize = 16;
+            iconButton2.Location = new Point(19, 608);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Rotation = 0D;
+            iconButton2.Size = new Size(125, 42);
+            iconButton2.TabIndex = 13;
+            iconButton2.Text = "Thanh Toán";
+            iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton3
+            // 
+            iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton3.IconColor = Color.Black;
+            iconButton3.IconSize = 16;
+            iconButton3.Location = new Point(169, 608);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Rotation = 0D;
+            iconButton3.Size = new Size(125, 42);
+            iconButton3.TabIndex = 14;
+            iconButton3.Text = "In";
+            iconButton3.UseVisualStyleBackColor = true;
             // 
             // Frm_Bill
             // 

@@ -22,7 +22,7 @@ namespace _3_PL.Views
 
         }
 
-        private void btn_add_Click(object sender, EventArgs e)
+        private void btn_delete_Click(object sender, EventArgs e)
         {
         }
 
@@ -30,7 +30,27 @@ namespace _3_PL.Views
         {
         }
 
-        private void btn_delete_Click(object sender, EventArgs e)
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txt_name_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void dtg_color_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
         }
     }
