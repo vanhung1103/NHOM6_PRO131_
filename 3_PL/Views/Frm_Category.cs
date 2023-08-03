@@ -16,5 +16,22 @@ namespace _3_PL.Views
         {
             InitializeComponent();
         }
+
+        private void Frm_Category_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

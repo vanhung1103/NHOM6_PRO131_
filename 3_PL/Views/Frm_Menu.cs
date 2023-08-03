@@ -50,7 +50,7 @@ namespace _3_PL.Views
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Frm_Bill());
+            OpenChildForm(new Frm_Pay());
         }
 
         private void iconButton7_Click(object sender, EventArgs e)

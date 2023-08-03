@@ -61,7 +61,7 @@
             // 
             txt_search.Location = new Point(196, 76);
             txt_search.Name = "txt_search";
-            txt_search.Size = new Size(370, 31);
+            txt_search.Size = new Size(391, 31);
             txt_search.TabIndex = 16;
             // 
             // txt_name
@@ -75,28 +75,31 @@
             // 
             btn_delete.Location = new Point(646, 369);
             btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(112, 34);
+            btn_delete.Size = new Size(133, 49);
             btn_delete.TabIndex = 14;
             btn_delete.Text = "Delete";
             btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.Click += btn_delete_Click;
             // 
             // btn_update
             // 
             btn_update.Location = new Point(646, 291);
             btn_update.Name = "btn_update";
-            btn_update.Size = new Size(112, 34);
+            btn_update.Size = new Size(133, 49);
             btn_update.TabIndex = 13;
             btn_update.Text = "Update";
             btn_update.UseVisualStyleBackColor = true;
+            btn_update.Click += btn_update_Click;
             // 
             // btn_add
             // 
             btn_add.Location = new Point(646, 208);
             btn_add.Name = "btn_add";
-            btn_add.Size = new Size(112, 34);
+            btn_add.Size = new Size(133, 49);
             btn_add.TabIndex = 12;
             btn_add.Text = "Add";
             btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // dtg_color
             // 
@@ -112,7 +115,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(821, 465);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txt_search);
@@ -123,6 +126,7 @@
             Controls.Add(dtg_color);
             Name = "Frm_Category";
             Text = "Frm_Category";
+            Load += Frm_Category_Load;
             ((System.ComponentModel.ISupportInitialize)dtg_color).EndInit();
             ResumeLayout(false);
             PerformLayout();

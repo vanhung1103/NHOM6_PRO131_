@@ -18,6 +18,8 @@ namespace _1_DAL.Models
         public Guid Color_Id { get; set; }
 
         public Guid Supplier_Id { get; set; }
+        public string MaSp { get; set; }
+
         public string Name { get; set; }
         public int Quantity { get; set; }
         public float Price { get; set; }
