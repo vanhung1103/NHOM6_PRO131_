@@ -47,6 +47,7 @@
             label2.Size = new Size(64, 25);
             label2.TabIndex = 18;
             label2.Text = "Search";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -56,6 +57,7 @@
             label1.Size = new Size(59, 25);
             label1.TabIndex = 17;
             label1.Text = "Name";
+            label1.Click += label1_Click;
             // 
             // txt_search
             // 
@@ -63,6 +65,7 @@
             txt_search.Name = "txt_search";
             txt_search.Size = new Size(370, 31);
             txt_search.TabIndex = 16;
+            txt_search.TextChanged += txt_search_TextChanged;
             // 
             // txt_name
             // 
@@ -70,6 +73,7 @@
             txt_name.Name = "txt_name";
             txt_name.Size = new Size(150, 31);
             txt_name.TabIndex = 15;
+            txt_name.TextChanged += txt_name_TextChanged;
             // 
             // btn_delete
             // 
@@ -79,6 +83,7 @@
             btn_delete.TabIndex = 14;
             btn_delete.Text = "Delete";
             btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.Click += btn_delete_Click;
             // 
             // btn_update
             // 
@@ -88,6 +93,7 @@
             btn_update.TabIndex = 13;
             btn_update.Text = "Update";
             btn_update.UseVisualStyleBackColor = true;
+            btn_update.Click += btn_update_Click;
             // 
             // btn_add
             // 
@@ -97,6 +103,7 @@
             btn_add.TabIndex = 12;
             btn_add.Text = "Add";
             btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // dtg_color
             // 
@@ -107,6 +114,7 @@
             dtg_color.RowTemplate.Height = 33;
             dtg_color.Size = new Size(360, 225);
             dtg_color.TabIndex = 11;
+            dtg_color.CellContentClick += dtg_color_CellContentClick;
             // 
             // Frm_Category
             // 
@@ -123,6 +131,7 @@
             Controls.Add(dtg_color);
             Name = "Frm_Category";
             Text = "Frm_Category";
+            Load += Frm_Category_Load;
             ((System.ComponentModel.ISupportInitialize)dtg_color).EndInit();
             ResumeLayout(false);
             PerformLayout();

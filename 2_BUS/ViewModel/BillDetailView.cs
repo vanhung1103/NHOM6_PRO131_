@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1_DAL.Models
+namespace _2_BUS.ViewModel
 {
-    public class BillDetail
+    public class BillDetailView
     {
         public Guid Id { get; set; }
-        
-        public Guid Pro_Id { get; set; }  
+
+        public Guid Pro_Id { get; set; }
 
         public Guid Bill_Id { get; set; }
         public string MaHDCT { get; set; }
@@ -20,8 +18,5 @@ namespace _1_DAL.Models
         public string Image { get; set; }
         public int Quantity { get; set; }
         public int Price { get; set; }
-        public virtual Product Product  { get; set; }
-        public virtual Bill Bill  { get; set; }
-
     }
 }

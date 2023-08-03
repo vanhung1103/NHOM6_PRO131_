@@ -18,6 +18,7 @@ namespace _1_DAL.Configuration
             buider.HasKey(x => x.Id);
             buider.Property(p => p.Bill_Id).IsRequired();
             buider.Property(p => p.Pro_Id).IsRequired();
+            buider.Property(p => p.MaHDCT).HasColumnName("Mahdct").HasColumnType("nvarchar(100)").IsRequired();
 
             buider.Property(p => p.Quantity).HasColumnName("Quantity").HasColumnType("decimal").IsRequired();
             buider.Property(p => p.Price).HasColumnName("Price").HasColumnType("decimal").IsRequired();

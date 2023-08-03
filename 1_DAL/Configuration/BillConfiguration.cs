@@ -18,9 +18,12 @@ namespace _1_DAL.Configuration
             buider.HasKey(x => x.Id);
             buider.Property(p => p.User_Id).IsRequired();
             buider.Property(p => p.Voucher_Id).IsRequired();
+            buider.Property(p => p.MaHD).HasColumnName("MaHD").HasColumnType("nvarchar(100)").IsRequired();
 
             buider.Property(p => p.Discount).HasColumnName("Discount").HasColumnType("nvarchar(100)").IsRequired();
             buider.Property(p => p.Create_Date).HasColumnName("Create_Date").HasColumnType("datetime").IsRequired();
+            buider.Property(p => p.Description).HasColumnName("Des").HasColumnType("datetime").IsRequired();
+            buider.Property(p => p.ProductName).HasColumnName("product name").HasColumnType("datetime").IsRequired();
             buider.Property(p => p.Total).HasColumnName("Total").HasColumnType("float").IsRequired();
 
             buider.HasOne(p => p.User).WithMany().HasForeignKey(p => p.User_Id);

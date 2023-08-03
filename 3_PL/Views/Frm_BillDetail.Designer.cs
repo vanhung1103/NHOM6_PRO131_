@@ -1,6 +1,6 @@
 ﻿namespace _3_PL.Views
 {
-    partial class Frm_Bill
+    partial class Frm_BillDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // Frm_Bill
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1101, 646);
-            Name = "Frm_Bill";
-            Text = "Frm_Bill";
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Frm_BillDetail";
         }
 
         #endregion
