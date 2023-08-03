@@ -26,3 +26,17 @@ E:\gitt\1_DAL\obj\Debug\net6.0\refint\_1_DAL.dll
 E:\gitt\1_DAL\obj\Debug\net6.0\_1_DAL.pdb
 E:\gitt\1_DAL\obj\Debug\net6.0\_1_DAL.genruntimeconfig.cache
 E:\gitt\1_DAL\obj\Debug\net6.0\ref\_1_DAL.dll
+E:\gitt2\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.deps.json
+E:\gitt2\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.runtimeconfig.json
+E:\gitt2\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.dll
+E:\gitt2\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.pdb
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.csproj.AssemblyReference.cache
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.AssemblyInfoInputs.cache
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.AssemblyInfo.cs
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.csproj.CoreCompileInputs.cache
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.dll
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\refint\_1_DAL.dll
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.pdb
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.genruntimeconfig.cache
+E:\gitt2\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\ref\_1_DAL.dll
