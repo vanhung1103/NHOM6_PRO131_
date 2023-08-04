@@ -43,25 +43,7 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(138, 38);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 18;
-            label2.Text = "Search";
-            label2.Click += label2_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(347, 144);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 20);
-            label1.TabIndex = 17;
-            label1.Text = "Name";
-            label1.Click += label1_Click;
+            
             // 
             // txt_search
             // 
@@ -71,18 +53,7 @@
             txt_search.Size = new Size(314, 27);
             txt_search.TabIndex = 16;
             txt_search.TextChanged += txt_search_TextChanged;
-            // 
-            // txt_name
-            // 
-            txt_name.Location = new Point(362, 169);
-            txt_name.Margin = new Padding(2, 2, 2, 2);
-            txt_name.Name = "txt_name";
-            txt_name.Size = new Size(121, 27);
-            txt_name.TabIndex = 15;
-            txt_name.TextChanged += txt_name_TextChanged;
-            // 
-            // btn_delete
-            // 
+            
             btn_delete.Location = new Point(517, 295);
             btn_delete.Margin = new Padding(2, 2, 2, 2);
             btn_delete.Name = "btn_delete";

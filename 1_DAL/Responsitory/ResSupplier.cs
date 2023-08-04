@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Data;
 using _1_DAL.IResponsitory;
 using _1_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,40 +13,46 @@ namespace _1_DAL.Responsitory
     public class ResSupplier : IResSupplier
     {
         ShopClothesContext contextsup;
-        List<Supplier> suppliers;
         public ResSupplier()
         {
             contextsup = new ShopClothesContext();
-            suppliers = new List<Supplier>();
         }
-        public bool AddSup(Supplier supplier)
+
+        public bool Add(Supplier x)
         {
-            contextsup.Suppliers.Add(supplier);
+            if (x == null) return false;
+            x.Id = Guid.NewGuid();
+            contextsup.Suppliers.Add(x);
             contextsup.SaveChanges();
             return true;
         }
 
-        public bool DeleteSup(Guid id)
+        public List<Supplier> GetAll()
         {
-            var idxoa = contextsup.Suppliers.Find(id);
-            contextsup.Suppliers.Remove(idxoa);
+            return contextsup.Suppliers.ToList();
+        }
+
+        public Supplier GetByID(Guid id)
+        {
+            return contextsup.Suppliers.Find(id);
+        }
+
+        public bool Remove(Guid x)
+        {
+            if (x == null) return false;
+            var tempobj = contextsup.Suppliers.FirstOrDefault(c => c.Id == x);
+            contextsup.Remove(tempobj);
             contextsup.SaveChanges();
             return true;
         }
 
-        public Supplier GetSupById(Guid supId)
+        public bool Update(Supplier x)
         {
-            return contextsup.Suppliers.Find(supId);
-        }
-
-        public List<Supplier> GetSups()
-        {
-            return suppliers = contextsup.Suppliers.ToList();
-        }
-
-        public bool UpdateSup(Supplier supplier)
-        {
-            contextsup.Suppliers.Update(supplier);
+            if (x == null) return false;
+            var tempobj = contextsup.Suppliers.FirstOrDefault(c => c.Id == x.Id);
+            tempobj.Id = x.Id;
+            tempobj.Name = x.Name;
+            contextsup.Update(tempobj);
             contextsup.SaveChanges();
             return true;
         }

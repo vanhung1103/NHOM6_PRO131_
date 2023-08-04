@@ -63,7 +63,6 @@ namespace _2_BUS.Services
 
         public string Remove(Guid obj)
         {
-
             if (obj == null) return "Xóa không thành công!";
             if (_IbillResponsitory.Remove(obj)) return "Xóa  thành công!";
             return "Xóa không thành công!";
@@ -71,7 +70,7 @@ namespace _2_BUS.Services
 
         public string Update(BillView obj)
         {
-            if (obj == null) return "Thêm không thành công!";
+            if (obj == null) return "Sửa không thành công!";
             var bill = new Bill()
             {
                 Id = obj.Id,
@@ -85,8 +84,8 @@ namespace _2_BUS.Services
                 Description = obj.Description,
 
             };
-            if (_IbillResponsitory.Update(bill)) return "Thêm  thành công!";
-            return "Thêm không thành công!";
+            if (_IbillResponsitory.Update(bill)) return "Sửa thành công!";
+            return "Sửa không thành công!";
         }
     }
 }

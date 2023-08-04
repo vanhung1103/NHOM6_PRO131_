@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Models;
 using _2_BUS.IServices;
 using _2_BUS.Services;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,12 +17,12 @@ namespace _3_PL.Views
     public partial class Frm_Supplier : Form
     {
         ISupplierServices supform;
-        Supplier nhacungcaps;
+        SupplierView nhacungcaps;
         public Frm_Supplier()
         {
             InitializeComponent();
             supform = new SupplierServices();
-            nhacungcaps = new Supplier();
+            nhacungcaps = new SupplierView();
         }
         void LoadData()
         {
@@ -29,14 +30,14 @@ namespace _3_PL.Views
             dtg_sup.ColumnCount = 2;
             dtg_sup.Columns[0].Name = "Id";
             dtg_sup.Columns[1].Name = "Name";
-            foreach (var x in supform.GetSuppliers())
+            foreach (var x in supform.Get())
             {
                 dtg_sup.Rows.Add(x.Id, x.Name);
             }
         }
         private void btn_add_Click(object sender, EventArgs e)
         {
-            var them = new Supplier()
+            var them = new SupplierView()
             {
                 Id = Guid.NewGuid(),
                 Name = txt_name.Text,
@@ -47,7 +48,7 @@ namespace _3_PL.Views
             }
             else
             {
-                if (supform.AddSupplier(them) != null)
+                if (supform.Add(them) != null)
                 {
                     LoadData();
                     MessageBox.Show("Them thanh cong");
@@ -69,7 +70,7 @@ namespace _3_PL.Views
             if (nhacungcaps != null)
             {
                 nhacungcaps.Name = txt_name.Text;
-                supform.UpdateSupplier(nhacungcaps);
+                supform.Update(nhacungcaps);
                 LoadData();
                 MessageBox.Show("Sua thanh cong", "Sua", MessageBoxButtons.OK);
             }
@@ -83,7 +84,7 @@ namespace _3_PL.Views
         {
             if (nhacungcaps != null)
             {
-                supform.DeleteSupplier(nhacungcaps.Id);
+                supform.Remove(nhacungcaps.Id);
                 LoadData();
                 MessageBox.Show("Xoa thanh cong", "Xoa", MessageBoxButtons.OK);
             }
@@ -96,23 +97,21 @@ namespace _3_PL.Views
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             string searchText = txt_search.Text.Trim();
-            var filteredSuppliers = supform.GetSuppliers().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+            var filteredSuppliers = supform.Get().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
             dtg_sup.Rows.Clear();
             foreach (var x in filteredSuppliers)
             {
                 dtg_sup.Rows.Add(x.Id, x.Name);
             }
         }
-
+        Guid id;
         private void dtg_sup_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var selectedRow = e.RowIndex;
             if (selectedRow >= 0 && selectedRow < dtg_sup.Rows.Count)
             {
-                DataGridViewRow row = dtg_sup.Rows[selectedRow];
-                var selectedId = Guid.Parse(row.Cells[0].Value.ToString());
-                nhacungcaps = supform.GetSupplierID(selectedId);
-                txt_name.Text = nhacungcaps.Name;
+                id = Guid.Parse(dtg_sup.CurrentRow.Cells[0].Value.ToString());
+                txt_name.Text = dtg_sup.CurrentRow.Cells[1].Value.ToString();
             }
         }
     }

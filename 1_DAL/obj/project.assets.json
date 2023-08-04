@@ -2042,11 +2042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PROJECT\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\_1_DAL.csproj",
       "projectName": "_1_DAL",
-      "projectPath": "C:\\Users\\ACER\\Desktop\\PROJECT\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\_1_DAL.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\Desktop\\PROJECT\\NHOM6_PRO131_\\1_DAL\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

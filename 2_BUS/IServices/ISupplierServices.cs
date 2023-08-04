@@ -1,4 +1,5 @@
 ﻿using _1_DAL.Models;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,9 @@ namespace _2_BUS.IServices
 {
     public interface ISupplierServices
     {
-        string AddSupplier(Supplier supplier);
-        string DeleteSupplier(Guid id);
-        string UpdateSupplier(Supplier supplier);
-        List<Supplier> GetSuppliers();
-        Supplier GetSupplierID(Guid id);
+        List<SupplierView> Get();
+        string Add(SupplierView obj);
+        string Remove(Guid obj);
+        string Update(SupplierView obj);
     }
 }

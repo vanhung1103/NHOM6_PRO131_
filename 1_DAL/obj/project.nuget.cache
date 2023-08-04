@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WqZixMX4eH/au0ze7W1wF+pqUsoswsgJm+pGYkZI0kZz46BHpcK8Hxp9pML21jyPPdE+JaVS+Y48mfdZfqvYdw==",
+  "dgSpecHash": "kO69EhHMz/I+WaCEC74kWC4CPNp1j7gs67g6jZqbvuDo9IRF4F/QGnErOdETIIO3LY5oKcRb28K0FKdr78fG4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ACER\\Desktop\\PROJECT\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+  "projectFilePath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\_1_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\fontawesome.sharp\\5.8.2\\fontawesome.sharp.5.8.2.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

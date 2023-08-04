@@ -9,10 +9,13 @@ namespace _1_DAL.IResponsitory
 {
     public interface IResCategory
     {
-        bool AddCate(Category category);
-        bool UpdateCate(Category category);
-        bool DeleteCate(Guid id);
-        List<Category> GetCates();
-        Category GetCateID(Guid id);
+        bool Add(Category x);
+
+        bool Remove(Guid x);
+
+        bool Update(Category x);
+
+        Category GetByID(Guid id);
+        List<Category> GetAll();
     }
 }

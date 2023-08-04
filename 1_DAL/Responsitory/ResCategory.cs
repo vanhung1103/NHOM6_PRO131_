@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Data;
 using _1_DAL.IResponsitory;
 using _1_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,40 +13,48 @@ namespace _1_DAL.Responsitory
     public class ResCategory : IResCategory
     {
         ShopClothesContext contextcate;
-        List<Category> categories;
         public ResCategory()
         {
             contextcate = new ShopClothesContext();
-            categories = new List<Category>();
         }
-        public bool AddCate(Category category)
+
+        public bool Add(Category x)
         {
-            contextcate.Categories.Add(category);
+            if (x == null) return false;
+            x.Id = Guid.NewGuid();
+
+            contextcate.Categories.Add(x);
             contextcate.SaveChanges();
             return true;
         }
 
-        public bool DeleteCate(Guid id)
+        public List<Category> GetAll()
         {
-            var idxoa = contextcate.Categories.Find(id);
-            contextcate.Categories.Remove(idxoa);
-            contextcate.SaveChanges();
-            return true;
+            return contextcate.Categories.ToList();
         }
 
-        public Category GetCateID(Guid id)
+        public Category GetByID(Guid id)
         {
             return contextcate.Categories.Find(id);
         }
 
-        public List<Category> GetCates()
+        public bool Remove(Guid x)
         {
-            return categories = contextcate.Categories.ToList();
+            if (x == null) return false;
+            var tempobj = contextcate.Categories.FirstOrDefault(c => c.Id == x);
+
+            contextcate.Remove(tempobj);
+            contextcate.SaveChanges();
+            return true;
         }
 
-        public bool UpdateCate(Category category)
+        public bool Update(Category x)
         {
-            contextcate.Categories.Update(category);
+            if (x == null) return false;
+            var tempobj = contextcate.Categories.FirstOrDefault(c => c.Id == x.Id);
+            tempobj.Id = x.Id;
+            tempobj.Name = x.Name;
+            contextcate.Update(tempobj);
             contextcate.SaveChanges();
             return true;
         }

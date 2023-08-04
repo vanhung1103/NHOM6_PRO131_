@@ -36,7 +36,7 @@ namespace _1_DAL.Data
         {
             base.OnConfiguring(optionsBuilder.
 
-              UseSqlServer("Data Source=VANHUNG;Initial Catalog=E-comerences;Integrated Security=True"));
+              UseSqlServer("Data Source=LAPTOP-NUP1I8BE\\SQLEXPRESS;Initial Catalog=DUAN1;Integrated Security=True"));
 
 
         }
