@@ -9,10 +9,13 @@ namespace _1_DAL.IResponsitory
 {
     public interface IResSupplier
     {
-        bool AddSup(Supplier supplier);
-        bool UpdateSup(Supplier supplier);
-        bool DeleteSup(Guid id);
-        List<Supplier> GetSups();
-        Supplier GetSupById(Guid supId);
+        bool Add(Supplier x);
+
+        bool Remove(Guid x);
+
+        bool Update(Supplier x);
+
+        Supplier GetByID(Guid id);
+        List<Supplier> GetAll();
     }
 }

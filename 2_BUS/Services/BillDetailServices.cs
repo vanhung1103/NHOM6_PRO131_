@@ -16,7 +16,7 @@ namespace _2_BUS.Services
         public IBillDetailResponsitory _ibillDetailResponsitory;
         public BillDetailServices()
         {
-            _ibillDetailResponsitory = new BillDetailResponsitory();
+            _ibillDetailResponsitory = new BilllDetailResponsitory();
         }
         public string Add(BillDetailView obj)
         {

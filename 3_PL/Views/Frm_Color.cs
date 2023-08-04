@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Models;
 using _2_BUS.IServices;
 using _2_BUS.Services;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,17 +17,12 @@ namespace _3_PL.Views
     public partial class Frm_Color : Form
     {
         IColorServices colorform;
-        Color maus;
+        ColorView maus;
         public Frm_Color()
         {
             InitializeComponent();
             colorform = new ColorServices();
-            maus = new Color();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            maus = new ColorView();
         }
 
         private void Frm_Color_Load(object sender, EventArgs e)
@@ -39,14 +35,14 @@ namespace _3_PL.Views
             dtg_color.ColumnCount = 2;
             dtg_color.Columns[0].Name = "Id";
             dtg_color.Columns[1].Name = "Name";
-            foreach (var x in colorform.GetColors())
+            foreach (var x in colorform.Get())
             {
                 dtg_color.Rows.Add(x.Id, x.Name);
             }
         }
         private void btn_add_Click(object sender, EventArgs e)
         {
-            var them = new Color()
+            var them = new ColorView()
             {
                 Id = Guid.NewGuid(),
                 Name = txt_name.Text,
@@ -57,7 +53,7 @@ namespace _3_PL.Views
             }
             else
             {
-                if (colorform.AddColor(them) != null)
+                if (colorform.Add(them) != null)
                 {
                     LoadData();
                     MessageBox.Show("Them thanh cong");
@@ -74,7 +70,7 @@ namespace _3_PL.Views
             if (maus != null)
             {
                 maus.Name = txt_name.Text;
-                colorform.UpdateColor(maus);
+                colorform.Update(maus);
                 LoadData();
                 MessageBox.Show("Sua thanh cong", "Sua", MessageBoxButtons.OK);
             }
@@ -88,7 +84,7 @@ namespace _3_PL.Views
         {
             if (maus != null)
             {
-                colorform.DeleteColor(maus.Id);
+                colorform.Remove(maus.Id);
                 LoadData();
                 MessageBox.Show("Xoa thanh cong", "Xoa", MessageBoxButtons.OK);
             }
@@ -101,23 +97,21 @@ namespace _3_PL.Views
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             string searchText = txt_search.Text.Trim();
-            var filteredSuppliers = colorform.GetColors().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+            var filteredSuppliers = colorform.Get().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
             dtg_color.Rows.Clear();
             foreach (var x in filteredSuppliers)
             {
                 dtg_color.Rows.Add(x.Id, x.Name);
             }
         }
-
+        Guid id;
         private void dtg_color_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var selectedRow = e.RowIndex;
             if (selectedRow >= 0 && selectedRow < dtg_color.Rows.Count)
             {
-                DataGridViewRow row = dtg_color.Rows[selectedRow];
-                var selectedId = Guid.Parse(row.Cells[0].Value.ToString());
-                maus = colorform.GetColorID(selectedId);
-                txt_name.Text = maus.Name;
+                id = Guid.Parse(dtg_color.CurrentRow.Cells[0].Value.ToString());
+                txt_name.Text = dtg_color.CurrentRow.Cells[1].Value.ToString();
             }
         }
     }

@@ -2,6 +2,7 @@
 using _1_DAL.Models;
 using _1_DAL.Responsitory;
 using _2_BUS.IServices;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,47 +14,57 @@ namespace _2_BUS.Services
     public class SupplierServices : ISupplierServices
     {
         IResSupplier ressup;
-        List<Supplier> supplierbus;
         public SupplierServices()
         {
             ressup = new ResSupplier();
-            supplierbus = new List<Supplier>();
         }
-        public string AddSupplier(Supplier supplier)
+
+        public string Add(SupplierView obj)
         {
-            if (ressup.AddSup(supplier))
+            if (obj == null) return "Thêm không thành công!";
+            var bill = new Supplier()
             {
-                return "Them thanh cong";
-            }
-            return "Thu lai";
+                Id = obj.Id,
+                Name = obj.Name,
+
+            };
+            if (ressup.Add(bill)) return "Thêm  thành công!";
+            return "Thêm không thành công!";
         }
 
-        public string DeleteSupplier(Guid id)
+        public List<SupplierView> Get()
         {
-            if (ressup.DeleteSup(id))
+            List<SupplierView> lst = new List<SupplierView>();
+            lst =
+                (
+                from a in ressup.GetAll()
+                select new SupplierView()
+                {
+                    Id = a.Id,
+                    Name = a.Name,
+                }
+                ).ToList();
+            return lst;
+        }
+
+        public string Remove(Guid obj)
+        {
+            if (obj == null) return "Xóa không thành công!";
+            if (ressup.Remove(obj)) return "Xóa  thành công!";
+            return "Xóa không thành công!";
+        }
+
+        public string Update(SupplierView obj)
+        {
+            if (obj == null) return "Sửa không thành công!";
+            var bill = new Supplier()
             {
-                return "Xoa thanh cong";
-            }
-            return "Thu lai";
-        }
+                Id = obj.Id,
+                Name = obj.Name,
 
-        public Supplier GetSupplierID(Guid id)
-        {
-            return ressup.GetSupById(id);
-        }
-
-        public List<Supplier> GetSuppliers()
-        {
-            return supplierbus = ressup.GetSups().ToList();
-        }
-
-        public string UpdateSupplier(Supplier supplier)
-        {
-            if (ressup.UpdateSup(supplier))
-            {
-                return "Sua thanh cong";
-            }
-            return "Thu lai";
+            };
+            if (ressup.Update(bill)) return "Sửa thành công!";
+            return "Sửa không thành công!";
         }
     }
 }

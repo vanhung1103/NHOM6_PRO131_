@@ -19,10 +19,8 @@ namespace _1_DAL.Responsitory
         }
         public bool Add(Bill x)
         {
-
             if (x == null) return false;
             x.Id = Guid.NewGuid();
-
             _context.Bills.Add(x);
             _context.SaveChanges();
             return true;
@@ -32,11 +30,10 @@ namespace _1_DAL.Responsitory
         {
             return _context.Bills.ToList();
         }
-            public bool Remove(Guid x)
+        public bool Remove(Guid x)
         {
             if (x == null) return false;
             var tempobj = _context.Bills.FirstOrDefault(c => c.Id == x);
-
             _context.Remove(tempobj);
             _context.SaveChanges();
             return true;
@@ -55,10 +52,6 @@ namespace _1_DAL.Responsitory
             tempobj.Create_Date = x.Create_Date;
             tempobj.Total = x.Total;
             tempobj.Discount = x.Discount;
-
-
-
-
             _context.Update(tempobj);
             _context.SaveChanges();
             return true;
