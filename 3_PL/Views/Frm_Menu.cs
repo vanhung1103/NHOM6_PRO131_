@@ -50,12 +50,22 @@ namespace _3_PL.Views
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Frm_Pay());
+            OpenChildForm(new Frm_Billl());
         }
 
         private void iconButton7_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Frm_Role());
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_Pay());
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_BillDetail());
         }
     }
 }
