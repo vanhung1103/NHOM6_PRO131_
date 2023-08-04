@@ -104,6 +104,7 @@
             iconButton8.TextAlign = ContentAlignment.MiddleLeft;
             iconButton8.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton8.UseVisualStyleBackColor = false;
+            iconButton8.Click += iconButton8_Click;
             // 
             // iconButton7
             // 
@@ -162,6 +163,7 @@
             iconButton5.TextAlign = ContentAlignment.MiddleLeft;
             iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton5.UseVisualStyleBackColor = false;
+            iconButton5.Click += iconButton5_Click;
             // 
             // iconButton4
             // 
