@@ -50,7 +50,7 @@
             label2.Size = new Size(53, 20);
             label2.TabIndex = 18;
             label2.Text = "Search";
-            label2.Click += label2_Click;
+            
             // 
             // label1
             // 

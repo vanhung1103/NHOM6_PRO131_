@@ -34,16 +34,23 @@ namespace _1_DAL.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Des");
 
                     b.Property<string>("Discount")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("Discount");
 
+                    b.Property<string>("MaHD")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("MaHD");
+
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("product name");
 
                     b.Property<double>("Total")
                         .HasColumnType("float")
@@ -77,6 +84,11 @@ namespace _1_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("Image");
+
+                    b.Property<string>("MaHDCT")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Mahdct");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal")
@@ -152,6 +164,11 @@ namespace _1_DAL.Migrations
                         .HasColumnType("nvarchar(400)")
                         .HasColumnName("Description");
 
+                    b.Property<string>("MaSp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Masp");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
@@ -168,8 +185,8 @@ namespace _1_DAL.Migrations
                     b.Property<Guid>("Size_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int")
+                    b.Property<bool>("Status")
+                        .HasColumnType("bool")
                         .HasColumnName("Status");
 
                     b.Property<Guid>("Supplier_Id")

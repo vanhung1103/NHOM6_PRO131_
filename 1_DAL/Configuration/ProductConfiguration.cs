@@ -18,13 +18,14 @@ namespace _1_DAL.Configuration
             buider.HasKey(x => x.Id);
 
             buider.Property(p => p.Name).HasColumnName("Name").HasColumnType("nvarchar(100)").IsRequired();
+            buider.Property(p => p.MaSp).HasColumnName("Masp").HasColumnType("nvarchar(100)").IsRequired();
             buider.Property(p => p.Supplier_Id).IsRequired();
             buider.Property(p => p.Color_Id).IsRequired();
             buider.Property(p => p.Cate_Id).IsRequired();
             buider.Property(p => p.Size_Id).IsRequired();
             buider.Property(p => p.Quantity).HasColumnName("Quantity").HasColumnType("int").IsRequired();
             buider.Property(p => p.Description).HasColumnName("Description").HasColumnType("nvarchar(400)").IsRequired();
-            buider.Property(p => p.Status).HasColumnName("Status").HasColumnType("int").IsRequired();
+            buider.Property(p => p.Status).HasColumnName("Status").HasColumnType("bool").IsRequired();
             buider.Property(p => p.Price).HasColumnName("Price").HasColumnType("decimal").IsRequired();
 
             buider.HasOne(p => p.Supplier).WithMany().HasForeignKey(p => p.Supplier_Id);
