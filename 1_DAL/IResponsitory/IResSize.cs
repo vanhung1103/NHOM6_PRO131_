@@ -9,10 +9,13 @@ namespace _1_DAL.IResponsitory
 {
     public interface IResSize
     {
-        bool AddSiz(Size size);
-        bool UpdateSiz(Size size);
-        bool DeleteSiz(Guid id);
-        List<Size> GetSizs();
-        Size GetSizeID(Guid id);
+        bool Add(Size x);
+
+        bool Remove(Guid x);
+
+        bool Update(Size x);
+
+        Size GetByID(Guid id);
+        List<Size> GetAll();
     }
 }

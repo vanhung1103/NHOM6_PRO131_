@@ -129,14 +129,7 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(140, 40);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 10;
-            label2.Text = "Search";
-            label2.Click += label2_Click;
+            
             // 
             // Frm_Color
             // 

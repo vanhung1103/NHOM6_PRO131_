@@ -9,10 +9,13 @@ namespace _1_DAL.IResponsitory
 {
     public interface IResColor
     {
-        bool AddCor(Color color);
-        bool UpdateCor(Color color);
-        bool DeleteCor(Guid id);
-        List<Color> GetCors();
-        Color GetCorID(Guid id);
+        bool Add(Color x);
+
+        bool Remove(Guid x);
+
+        bool Update(Color x);
+
+        Color GetByID(Guid id);
+        List<Color> GetAll();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Data;
 using _1_DAL.IResponsitory;
 using _1_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,40 +15,46 @@ namespace _1_DAL.Responsitory
     public class ResColor : IResColor
     {
         ShopClothesContext contextcor;
-        List<Color> colors;
         public ResColor()
         {
             contextcor = new ShopClothesContext();
-            colors = new List<Color>();
         }
-        public bool AddCor(Color color)
+
+        public bool Add(Color x)
         {
-            contextcor.Colors.Add(color);
+            if (x == null) return false;
+            x.Id = Guid.NewGuid();
+            contextcor.Colors.Add(x);
             contextcor.SaveChanges();
             return true;
         }
 
-        public bool DeleteCor(Guid id)
+        public List<Color> GetAll()
         {
-            var idxoa = contextcor.Colors.Find(id);
-            contextcor.Colors.Remove(idxoa);
-            contextcor.SaveChanges();
-            return true;
+            return contextcor.Colors.ToList();
         }
 
-        public Color GetCorID(Guid id)
+        public Color GetByID(Guid id)
         {
             return contextcor.Colors.Find(id);
         }
 
-        public List<Color> GetCors()
+        public bool Remove(Guid x)
         {
-            return colors = contextcor.Colors.ToList();
+            if (x == null) return false;
+            var tempobj = contextcor.Colors.FirstOrDefault(c => c.Id == x);
+            contextcor.Remove(tempobj);
+            contextcor.SaveChanges();
+            return true;
         }
 
-        public bool UpdateCor(Color color)
+        public bool Update(Color x)
         {
-            contextcor.Colors.Update(color);
+            if (x == null) return false;
+            var tempobj = contextcor.Colors.FirstOrDefault(c => c.Id == x.Id);
+            tempobj.Id = x.Id;
+            tempobj.Name = x.Name;
+            contextcor.Update(tempobj);
             contextcor.SaveChanges();
             return true;
         }

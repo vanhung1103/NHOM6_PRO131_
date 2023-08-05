@@ -1,6 +1,7 @@
 ﻿using _1_DAL.Data;
 using _1_DAL.IResponsitory;
 using _1_DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,40 +15,46 @@ namespace _1_DAL.Responsitory
     public class ResSize : IResSize
     {
         ShopClothesContext contextsize;
-        List<Size> sizes;
         public ResSize()
         {
             contextsize = new ShopClothesContext();
-            sizes = new List<Size>();
         }
-        public bool AddSiz(Size size)
+
+        public bool Add(Size x)
         {
-            contextsize.Sizes.Add(size);
+            if (x == null) return false;
+            x.Id = Guid.NewGuid();
+            contextsize.Sizes.Add(x);
             contextsize.SaveChanges();
             return true;
         }
 
-        public bool DeleteSiz(Guid id)
+        public List<Size> GetAll()
         {
-            var idxoa = contextsize.Sizes.Find(id);
-            contextsize.Sizes.Add(idxoa);
-            contextsize.SaveChanges();
-            return true;
+            return contextsize.Sizes.ToList();
         }
 
-        public Size GetSizeID(Guid id)
+        public Size GetByID(Guid id)
         {
             return contextsize.Sizes.Find(id);
         }
 
-        public List<Size> GetSizs()
+        public bool Remove(Guid x)
         {
-            return sizes = contextsize.Sizes.ToList();
+            if (x == null) return false;
+            var tempobj = contextsize.Sizes.FirstOrDefault(c => c.Id == x);
+            contextsize.Remove(tempobj);
+            contextsize.SaveChanges();
+            return true;
         }
 
-        public bool UpdateSiz(Size size)
+        public bool Update(Size x)
         {
-            contextsize.Sizes.Update(size);
+            if (x == null) return false;
+            var tempobj = contextsize.Sizes.FirstOrDefault(c => c.Id == x.Id);
+            tempobj.Id = x.Id;
+            tempobj.Name = x.Name;
+            contextsize.Update(tempobj);
             contextsize.SaveChanges();
             return true;
         }
