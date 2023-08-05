@@ -147,6 +147,57 @@ namespace _1_DAL.Migrations
                     b.ToTable("Color", (string)null);
                 });
 
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.Property<Guid>("CustomerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("CustomerId");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Feedback")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("PurchaseHistory")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("voucher_Id")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("voucher_Id");
+
+                    b.HasKey("CustomerId");
+
+                    b.HasIndex("voucher_Id");
+
+                    b.ToTable("Customers", (string)null);
+                });
+
             modelBuilder.Entity("_1_DAL.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -355,6 +406,17 @@ namespace _1_DAL.Migrations
                     b.Navigation("Bill");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.HasOne("_1_DAL.Models.Voucher", "Voucher")
+                        .WithMany()
+                        .HasForeignKey("voucher_Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Voucher");
                 });
 
             modelBuilder.Entity("_1_DAL.Models.Product", b =>

@@ -2057,23 +2057,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {},
+    "C:\\Users\\FPT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\2_BUS\\2_BUS.csproj",
+      "projectUniqueName": "C:\\Users\\FPT\\OneDrive\\Documents\\GitHub\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
       "projectName": "2_BUS",
-      "projectPath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\2_BUS\\2_BUS.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\2_BUS\\obj\\",
+      "projectPath": "C:\\Users\\FPT\\OneDrive\\Documents\\GitHub\\NHOM6_PRO131_\\2_BUS\\2_BUS.csproj",
+      "packagesPath": "C:\\Users\\FPT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FPT\\OneDrive\\Documents\\GitHub\\NHOM6_PRO131_\\2_BUS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FPT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2088,8 +2088,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\_1_DAL.csproj": {
-              "projectPath": "C:\\Users\\ACER\\Desktop\\PROJECT_DU_AN_1\\1_DAL\\_1_DAL.csproj"
+            "C:\\Users\\FPT\\OneDrive\\Documents\\GitHub\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
+              "projectPath": "C:\\Users\\FPT\\OneDrive\\Documents\\GitHub\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj"
             }
           }
         }
@@ -2145,7 +2145,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

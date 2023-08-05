@@ -12,8 +12,8 @@ using _1_DAL.Data;
 namespace _1_DAL.Migrations
 {
     [DbContext(typeof(ShopClothesContext))]
-    [Migration("20230713012749_DB1")]
-    partial class DB1
+    [Migration("20230805021352_db1")]
+    partial class db1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,16 +36,23 @@ namespace _1_DAL.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Des");
 
                     b.Property<string>("Discount")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("Discount");
 
+                    b.Property<string>("MaHD")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("MaHD");
+
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("product name");
 
                     b.Property<double>("Total")
                         .HasColumnType("float")
@@ -79,6 +86,11 @@ namespace _1_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("Image");
+
+                    b.Property<string>("MaHDCT")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Mahdct");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal")
@@ -137,6 +149,57 @@ namespace _1_DAL.Migrations
                     b.ToTable("Color", (string)null);
                 });
 
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.Property<Guid>("CustomerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("CustomerId");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Feedback")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("PurchaseHistory")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("voucher_Id")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("voucher_Id");
+
+                    b.HasKey("CustomerId");
+
+                    b.HasIndex("voucher_Id");
+
+                    b.ToTable("Customers", (string)null);
+                });
+
             modelBuilder.Entity("_1_DAL.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -153,6 +216,10 @@ namespace _1_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(400)")
                         .HasColumnName("Description");
+
+                    b.Property<string>("MaSp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -341,6 +408,17 @@ namespace _1_DAL.Migrations
                     b.Navigation("Bill");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.HasOne("_1_DAL.Models.Voucher", "Voucher")
+                        .WithMany()
+                        .HasForeignKey("voucher_Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Voucher");
                 });
 
             modelBuilder.Entity("_1_DAL.Models.Product", b =>
