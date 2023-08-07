@@ -44,13 +44,13 @@ namespace _3_PL.Views
             cl = new _1_DAL.Models.Color();
             su = new _1_DAL.Models.Supplier();
             LoadData();
-            
+
             LoadColor();
             LoadSize();
             LoadCategory();
             LoadSup();
         }
-        
+
         public void LoadColor()
         {
             foreach (var x in _colorServices.GetColors())
@@ -70,7 +70,7 @@ namespace _3_PL.Views
         public void LoadCategory()
         {
 
-            foreach (var x in _categoryServices.GetCategories())
+            foreach (var x in _categoryServices.GetCategorys())
             {
                 cbx_cate.Items.Add(x.Name);
             }
@@ -113,7 +113,7 @@ namespace _3_PL.Views
             {
 
                 dtg_view.Rows.Add(x.Id,
-                    (x.Cate_Id != null) ? _categoryServices.GetCategories().FirstOrDefault(c => c.Id == x.Cate_Id).Name : " ",
+                    (x.Cate_Id != null) ? _categoryServices.GetCategorys().FirstOrDefault(c => c.Id == x.Cate_Id).Name : " ",
                     (x.Size_Id != null) ? _sizeServices.GetSizes().FirstOrDefault(c => c.Id == x.Size_Id).Name : " ",
                     (x.Color_Id != null) ? _colorServices.GetColors().FirstOrDefault(c => c.Id == x.Color_Id).Name : " ",
                     (x.Supplier_Id != null) ? _supplierServices.GetSuppliers().FirstOrDefault(c => c.Id == x.Supplier_Id).Name : " ",
@@ -144,7 +144,7 @@ namespace _3_PL.Views
             {
 
                 dtg_view.Rows.Add(x.Id,
-                    (x.Cate_Id != null) ? _categoryServices.GetCategories().FirstOrDefault(c => c.Id == x.Cate_Id).Name : " ",
+                    (x.Cate_Id != null) ? _categoryServices.GetCategorys().FirstOrDefault(c => c.Id == x.Cate_Id).Name : " ",
                     (x.Size_Id != null) ? _sizeServices.GetSizes().FirstOrDefault(c => c.Id == x.Size_Id).Name : " ",
                     (x.Color_Id != null) ? _colorServices.GetColors().FirstOrDefault(c => c.Id == x.Color_Id).Name : " ",
                     (x.Supplier_Id != null) ? _supplierServices.GetSuppliers().FirstOrDefault(c => c.Id == x.Supplier_Id).Name : " ",
@@ -157,7 +157,7 @@ namespace _3_PL.Views
             var them = new ProductView()
             {
                 Id = Guid.NewGuid(),
-                Cate_Id = _categoryServices.GetCategories().FirstOrDefault(C => C.Name == cbx_cate.Text).Id,
+                Cate_Id = _categoryServices.GetCategorys().FirstOrDefault(C => C.Name == cbx_cate.Text).Id,
                 Size_Id = _sizeServices.GetSizes().FirstOrDefault(C => C.Name == cbx_size.Text).Id,
                 Color_Id = _colorServices.GetColors().FirstOrDefault(C => C.Name == cbx_color.Text).Id,
                 Supplier_Id = _supplierServices.GetSuppliers().FirstOrDefault(C => C.Name == cbx_suplplier.Text).Id,
@@ -166,7 +166,7 @@ namespace _3_PL.Views
                 Quantity = Convert.ToInt32(txt_quantity.Text),
                 Price = Convert.ToInt32(txt_price.Text),
                 Description = txt_des.Text,
-                Status=rbtn_ConHang.Checked,
+                Status = rbtn_ConHang.Checked,
             };
             DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn thêm không", "Thông báo", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -182,7 +182,7 @@ namespace _3_PL.Views
             ProductView pr = new ProductView()
             {
                 Id = _id,
-                Cate_Id = _categoryServices.GetCategories().FirstOrDefault(C => C.Name == cbx_cate.Text).Id,
+                Cate_Id = _categoryServices.GetCategorys().FirstOrDefault(C => C.Name == cbx_cate.Text).Id,
                 Size_Id = _sizeServices.GetSizes().FirstOrDefault(C => C.Name == cbx_size.Text).Id,
                 Color_Id = _colorServices.GetColors().FirstOrDefault(C => C.Name == cbx_color.Text).Id,
                 Supplier_Id = _supplierServices.GetSuppliers().FirstOrDefault(C => C.Name == cbx_suplplier.Text).Id,
@@ -239,6 +239,11 @@ namespace _3_PL.Views
 
 
 
+
+        }
+
+        private void Frm_Product_Load(object sender, EventArgs e)
+        {
 
         }
     }

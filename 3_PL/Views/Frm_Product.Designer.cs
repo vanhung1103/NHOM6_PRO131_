@@ -354,6 +354,7 @@
             Margin = new Padding(2);
             Name = "Frm_Product";
             Text = "Frm_Product";
+            Load += Frm_Product_Load;
             ((System.ComponentModel.ISupportInitialize)dtg_view).EndInit();
             ResumeLayout(false);
             PerformLayout();

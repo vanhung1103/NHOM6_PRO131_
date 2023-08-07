@@ -13,11 +13,7 @@ namespace _3_PL
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-<<<<<<< HEAD
-            Application.Run(new Frm_Product());
-=======
-            Application.Run(new Frm_Customer());
->>>>>>> main
+            Application.Run(new Frm_Menu());
         }
     }
 }

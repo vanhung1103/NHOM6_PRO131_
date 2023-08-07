@@ -32,7 +32,7 @@ namespace _2_BUS.Services
             return "Thêm không thành công!";
         }
 
-        public List<SupplierView> Get()
+        public List<SupplierView> GetSuppliers()
         {
             List<SupplierView> lst = new List<SupplierView>();
             lst =

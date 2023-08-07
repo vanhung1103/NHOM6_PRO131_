@@ -34,7 +34,7 @@ namespace _2_BUS.Services
             return "Thêm không thành công!";
         }
 
-        public List<SizeView> Get()
+        public List<SizeView> GetSizes()
         {
             List<SizeView> lst = new List<SizeView>();
             lst =

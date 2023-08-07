@@ -10,7 +10,7 @@ namespace _2_BUS.IServices
 {
     public interface IColorServices
     {
-        List<ColorView> Get();
+        List<ColorView> GetColors();
         string Add(ColorView obj);
         string Remove(Guid obj);
         string Update(ColorView obj);
