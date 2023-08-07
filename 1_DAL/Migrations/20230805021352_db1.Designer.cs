@@ -12,8 +12,13 @@ using _1_DAL.Data;
 namespace _1_DAL.Migrations
 {
     [DbContext(typeof(ShopClothesContext))]
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.Designer.cs
+    [Migration("20230804091934_1234")]
+    partial class _1234
+========
     [Migration("20230805021352_db1")]
     partial class db1
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -219,7 +224,12 @@ namespace _1_DAL.Migrations
 
                     b.Property<string>("MaSp")
                         .IsRequired()
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.Designer.cs
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Masp");
+========
                         .HasColumnType("nvarchar(max)");
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.Designer.cs
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -237,8 +247,8 @@ namespace _1_DAL.Migrations
                     b.Property<Guid>("Size_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int")
+                    b.Property<bool>("Status")
+                        .HasColumnType("bool")
                         .HasColumnName("Status");
 
                     b.Property<Guid>("Supplier_Id")

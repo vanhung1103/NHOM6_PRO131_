@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\2_BUS.deps.json
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\2_BUS.runtimeconfig.json
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\2_BUS.dll
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\2_BUS.pdb
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\_1_DAL.dll
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\bin\Debug\net6.0\_1_DAL.pdb
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.csproj.AssemblyReference.cache
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfoInputs.cache
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.AssemblyInfo.cs
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.csproj.CoreCompileInputs.cache
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.csproj.CopyComplete
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.dll
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\refint\2_BUS.dll
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.pdb
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\2_BUS.genruntimeconfig.cache
+C:\Users\dohuy\OneDrive\Desktop\DA1\2_BUS\obj\Debug\net6.0\ref\2_BUS.dll
+=======
 E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.deps.json
 E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.runtimeconfig.json
 E:\GITHUB\2_BUS\bin\Debug\net6.0\2_BUS.dll
@@ -83,3 +102,4 @@ C:\Users\FPT\OneDrive\Documents\GitHub\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\refi
 C:\Users\FPT\OneDrive\Documents\GitHub\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.pdb
 C:\Users\FPT\OneDrive\Documents\GitHub\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\2_BUS.genruntimeconfig.cache
 C:\Users\FPT\OneDrive\Documents\GitHub\NHOM6_PRO131_\2_BUS\obj\Debug\net6.0\ref\2_BUS.dll
+>>>>>>> main

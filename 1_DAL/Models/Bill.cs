@@ -21,7 +21,11 @@ namespace _1_DAL.Models
         public DateTime Create_Date { get; set; }
         public int Total { get; set; }
         public string Description { get; set; }
+<<<<<<< HEAD
+
+=======
         //public string MaHD { get; set; }
+>>>>>>> main
         public virtual User User { get; set; }
         public virtual  Voucher Voucher { get; set; }
     }

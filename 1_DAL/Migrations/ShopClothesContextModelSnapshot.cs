@@ -217,7 +217,8 @@ namespace _1_DAL.Migrations
 
                     b.Property<string>("MaSp")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Masp");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -235,8 +236,8 @@ namespace _1_DAL.Migrations
                     b.Property<Guid>("Size_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int")
+                    b.Property<bool>("Status")
+                        .HasColumnType("bool")
                         .HasColumnName("Status");
 
                     b.Property<Guid>("Supplier_Id")

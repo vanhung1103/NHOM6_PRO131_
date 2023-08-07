@@ -5,7 +5,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace _1_DAL.Migrations
 {
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.cs
+    public partial class _1234 : Migration
+========
     public partial class db1 : Migration
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.cs
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -115,12 +119,16 @@ namespace _1_DAL.Migrations
                     Size_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Color_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Supplier_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.cs
+                    Masp = table.Column<string>(type: "nvarchar(100)", nullable: false),
+========
                     MaSp = table.Column<string>(type: "nvarchar(max)", nullable: false),
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.cs
                     Name = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(38,17)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(400)", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<bool>(type: "bool", nullable: false)
                 },
                 constraints: table =>
                 {

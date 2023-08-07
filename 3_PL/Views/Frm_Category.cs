@@ -1,7 +1,6 @@
 ﻿using _1_DAL.Models;
 using _2_BUS.IServices;
 using _2_BUS.Services;
-using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,13 +16,14 @@ namespace _3_PL.Views
     public partial class Frm_Category : Form
     {
         ICategoryServices cateform;
-        CategoryView loaisanphams;
+        Category loaisanphams;
         public Frm_Category()
         {
             InitializeComponent();
             cateform = new CategoryServices();
-            loaisanphams = new CategoryView();
+            loaisanphams = new Category();
         }
+
         private void Frm_Category_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +34,7 @@ namespace _3_PL.Views
             dtg_cate.ColumnCount = 2;
             dtg_cate.Columns[0].Name = "Id";
             dtg_cate.Columns[1].Name = "Name";
-            foreach (var x in cateform.Get())
+            foreach (var x in cateform.GetCategories())
             {
                 dtg_cate.Rows.Add(x.Id, x.Name);
             }
@@ -43,7 +43,7 @@ namespace _3_PL.Views
         {
             if (loaisanphams != null)
             {
-                cateform.Remove(loaisanphams.Id);
+                cateform.DeleteCategory(loaisanphams.Id);
                 LoadData();
                 MessageBox.Show("Xoa thanh cong", "Xoa", MessageBoxButtons.OK);
             }
@@ -52,12 +52,13 @@ namespace _3_PL.Views
                 MessageBox.Show("Error", "Loi", MessageBoxButtons.OK);
             }
         }
+
         private void btn_update_Click(object sender, EventArgs e)
         {
             if (loaisanphams != null)
             {
                 loaisanphams.Name = txt_name.Text;
-                cateform.Update(loaisanphams);
+                cateform.UpdateCategory(loaisanphams);
                 LoadData();
                 MessageBox.Show("Sua thanh cong", "Sua", MessageBoxButtons.OK);
             }
@@ -66,9 +67,10 @@ namespace _3_PL.Views
                 MessageBox.Show("Error", "Loi", MessageBoxButtons.OK);
             }
         }
+
         private void btn_add_Click(object sender, EventArgs e)
         {
-            var them = new CategoryView()
+            var them = new Category()
             {
                 Id = Guid.NewGuid(),
                 Name = txt_name.Text,
@@ -79,7 +81,7 @@ namespace _3_PL.Views
             }
             else
             {
-                if (cateform.Add(them) != null)
+                if (cateform.AddCategory(them) != null)
                 {
                     LoadData();
                     MessageBox.Show("Them thanh cong");
@@ -90,26 +92,41 @@ namespace _3_PL.Views
                 }
             }
         
+    }
+
+        private void txt_name_TextChanged(object sender, EventArgs e)
+        {
+            
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             string searchText = txt_search.Text.Trim();
-            var filteredSuppliers = cateform.Get().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+            var filteredSuppliers = cateform.GetCategories().Where(x => x.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
             dtg_cate.Rows.Clear();
             foreach (var x in filteredSuppliers)
             {
                 dtg_cate.Rows.Add(x.Id, x.Name);
             }
         }
-        Guid id;
+
         private void dtg_color_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var selectedRow = e.RowIndex;
             if (selectedRow >= 0 && selectedRow < dtg_cate.Rows.Count)
             {
-                id = Guid.Parse(dtg_cate.CurrentRow.Cells[0].Value.ToString());
-                txt_name.Text = dtg_cate.CurrentRow.Cells[1].Value.ToString();
+                DataGridViewRow row = dtg_cate.Rows[selectedRow];
+                var selectedId = Guid.Parse(row.Cells[0].Value.ToString());
+                loaisanphams = cateform.GetCategoryID(selectedId);
+                txt_name.Text = loaisanphams.Name;
             }
         }
+
+        
     }
 }
