@@ -10,7 +10,7 @@ namespace _2_BUS.IServices
 {
     public interface ISizeServices
     {
-        List<SizeView> Get();
+        List<SizeView> GetSizes();
         string Add(SizeView obj);
         string Remove(Guid obj);
         string Update(SizeView obj);

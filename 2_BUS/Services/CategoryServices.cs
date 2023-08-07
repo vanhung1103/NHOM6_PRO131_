@@ -32,7 +32,7 @@ namespace _2_BUS.Services
             return "Thêm không thành công!";
         }
 
-        public List<CategoryView> Get()
+        public List<CategoryView> GetCategorys()
         {
             List<CategoryView> lst = new List<CategoryView>();
             lst =

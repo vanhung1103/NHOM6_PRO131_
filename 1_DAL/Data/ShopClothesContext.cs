@@ -36,11 +36,7 @@ namespace _1_DAL.Data
         #endregion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder.
-
-              UseSqlServer("Data Source=TRANTRUNGDONG03\\SQLEXPRESS01;Initial Catalog=db1;Integrated Security=True"));
-
-
+            optionsBuilder.UseSqlServer("Data Source=LAPTOP-NUP1I8BE\\SQLEXPRESS;Initial Catalog=PROJECT1;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

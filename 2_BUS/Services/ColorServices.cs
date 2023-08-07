@@ -34,7 +34,7 @@ namespace _2_BUS.Services
             return "Thêm không thành công!";
         }
 
-        public List<ColorView> Get()
+        public List<ColorView> GetColors()
         {
             List<ColorView> lst = new List<ColorView>();
             lst =

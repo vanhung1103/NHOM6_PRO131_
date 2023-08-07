@@ -10,7 +10,7 @@ namespace _2_BUS.IServices
 {
     public interface ISupplierServices
     {
-        List<SupplierView> Get();
+        List<SupplierView> GetSuppliers();
         string Add(SupplierView obj);
         string Remove(Guid obj);
         string Update(SupplierView obj);

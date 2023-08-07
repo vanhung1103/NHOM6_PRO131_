@@ -10,7 +10,7 @@ namespace _2_BUS.IServices
 {
     public interface ICategoryServices
     {
-        List<CategoryView> Get();
+        List<CategoryView> GetCategorys();
         string Add(CategoryView obj);
         string Remove(Guid obj);
         string Update(CategoryView obj);
