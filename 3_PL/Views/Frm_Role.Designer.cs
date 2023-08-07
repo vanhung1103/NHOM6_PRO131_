@@ -28,104 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new Label();
-            label1 = new Label();
-            txt_search = new TextBox();
-            txt_name = new TextBox();
-            btn_delete = new Button();
-            btn_update = new Button();
-            btn_add = new Button();
-            dtg_color = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dtg_color).BeginInit();
-            SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.dgv_role = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_role)).BeginInit();
+            this.SuspendLayout();
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(172, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 25);
-            label2.TabIndex = 18;
-            label2.Text = "Search";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(138, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Search";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(434, 180);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 25);
-            label1.TabIndex = 17;
-            label1.Text = "Name";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(347, 144);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Name";
             // 
             // txt_search
             // 
-            txt_search.Location = new Point(196, 76);
-            txt_search.Name = "txt_search";
-            txt_search.Size = new Size(370, 31);
-            txt_search.TabIndex = 16;
+            this.txt_search.Location = new System.Drawing.Point(157, 61);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(297, 27);
+            this.txt_search.TabIndex = 16;
             // 
             // txt_name
             // 
-            txt_name.Location = new Point(453, 211);
-            txt_name.Name = "txt_name";
-            txt_name.Size = new Size(150, 31);
-            txt_name.TabIndex = 15;
+            this.txt_name.Location = new System.Drawing.Point(362, 169);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(121, 27);
+            this.txt_name.TabIndex = 15;
             // 
             // btn_delete
             // 
-            btn_delete.Location = new Point(646, 369);
-            btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(112, 34);
-            btn_delete.TabIndex = 14;
-            btn_delete.Text = "Delete";
-            btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Location = new System.Drawing.Point(517, 295);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(90, 27);
+            this.btn_delete.TabIndex = 14;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_update
             // 
-            btn_update.Location = new Point(646, 291);
-            btn_update.Name = "btn_update";
-            btn_update.Size = new Size(112, 34);
-            btn_update.TabIndex = 13;
-            btn_update.Text = "Update";
-            btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Location = new System.Drawing.Point(517, 233);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(90, 27);
+            this.btn_update.TabIndex = 13;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_add
             // 
-            btn_add.Location = new Point(646, 208);
-            btn_add.Name = "btn_add";
-            btn_add.Size = new Size(112, 34);
-            btn_add.TabIndex = 12;
-            btn_add.Text = "Add";
-            btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Location = new System.Drawing.Point(517, 166);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(90, 27);
+            this.btn_add.TabIndex = 12;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // dtg_color
+            // dgv_role
             // 
-            dtg_color.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtg_color.Location = new Point(42, 178);
-            dtg_color.Name = "dtg_color";
-            dtg_color.RowHeadersWidth = 62;
-            dtg_color.RowTemplate.Height = 33;
-            dtg_color.Size = new Size(360, 225);
-            dtg_color.TabIndex = 11;
+            this.dgv_role.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_role.Location = new System.Drawing.Point(11, 144);
+            this.dgv_role.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_role.Name = "dgv_role";
+            this.dgv_role.RowHeadersWidth = 62;
+            this.dgv_role.RowTemplate.Height = 33;
+            this.dgv_role.Size = new System.Drawing.Size(309, 194);
+            this.dgv_role.TabIndex = 11;
+            this.dgv_role.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_role_CellClick);
             // 
             // Frm_Role
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(txt_search);
-            Controls.Add(txt_name);
-            Controls.Add(btn_delete);
-            Controls.Add(btn_update);
-            Controls.Add(btn_add);
-            Controls.Add(dtg_color);
-            Name = "Frm_Role";
-            Text = "Frm_Role";
-            ((System.ComponentModel.ISupportInitialize)dtg_color).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_search);
+            this.Controls.Add(this.txt_name);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.dgv_role);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Frm_Role";
+            this.Text = "Frm_Role";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_role)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -137,6 +151,6 @@
         private Button btn_delete;
         private Button btn_update;
         private Button btn_add;
-        private DataGridView dtg_color;
+        private DataGridView dgv_role;
     }
 }

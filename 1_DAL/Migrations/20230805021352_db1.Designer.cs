@@ -12,8 +12,13 @@ using _1_DAL.Data;
 namespace _1_DAL.Migrations
 {
     [DbContext(typeof(ShopClothesContext))]
-    [Migration("20230804110247_duan1")]
-    partial class duan1
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.Designer.cs
+    [Migration("20230804091934_1234")]
+    partial class _1234
+========
+    [Migration("20230805021352_db1")]
+    partial class db1
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -149,6 +154,57 @@ namespace _1_DAL.Migrations
                     b.ToTable("Color", (string)null);
                 });
 
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.Property<Guid>("CustomerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("CustomerId");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Feedback")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("PurchaseHistory")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("voucher_Id")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("voucher_Id");
+
+                    b.HasKey("CustomerId");
+
+                    b.HasIndex("voucher_Id");
+
+                    b.ToTable("Customers", (string)null);
+                });
+
             modelBuilder.Entity("_1_DAL.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -168,7 +224,12 @@ namespace _1_DAL.Migrations
 
                     b.Property<string>("MaSp")
                         .IsRequired()
+<<<<<<<< HEAD:1_DAL/Migrations/20230804091934_1234.Designer.cs
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Masp");
+========
                         .HasColumnType("nvarchar(max)");
+>>>>>>>> main:1_DAL/Migrations/20230805021352_db1.Designer.cs
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -186,8 +247,8 @@ namespace _1_DAL.Migrations
                     b.Property<Guid>("Size_Id")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int")
+                    b.Property<bool>("Status")
+                        .HasColumnType("bool")
                         .HasColumnName("Status");
 
                     b.Property<Guid>("Supplier_Id")
@@ -357,6 +418,17 @@ namespace _1_DAL.Migrations
                     b.Navigation("Bill");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("_1_DAL.Models.Customer", b =>
+                {
+                    b.HasOne("_1_DAL.Models.Voucher", "Voucher")
+                        .WithMany()
+                        .HasForeignKey("voucher_Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Voucher");
                 });
 
             modelBuilder.Entity("_1_DAL.Models.Product", b =>
