@@ -8,12 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "3_PL/1.0.0": {
         "dependencies": {
-          "2_BUS": "1.0.0",
           "FontAwesome.Sharp": "5.8.2",
           "Microsoft.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore.Design": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.16"
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.16",
+          "_2_BUS": "1.0.0"
         },
         "runtime": {
           "3_PL.dll": {}
@@ -425,17 +425,6 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
-      "2_BUS/1.0.0": {
-        "dependencies": {
-          "FontAwesome.Sharp": "5.8.2",
-          "Microsoft.EntityFrameworkCore": "6.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
-          "_1_DAL": "1.0.0"
-        },
-        "runtime": {
-          "2_BUS.dll": {}
-        }
-      },
       "_1_DAL/1.0.0": {
         "dependencies": {
           "FontAwesome.Sharp": "5.8.2",
@@ -444,6 +433,17 @@
         },
         "runtime": {
           "_1_DAL.dll": {}
+        }
+      },
+      "_2_BUS/1.0.0": {
+        "dependencies": {
+          "FontAwesome.Sharp": "5.8.2",
+          "Microsoft.EntityFrameworkCore": "6.0.16",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "_1_DAL": "1.0.0"
+        },
+        "runtime": {
+          "_2_BUS.dll": {}
         }
       }
     }
@@ -762,12 +762,12 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "2_BUS/1.0.0": {
+    "_1_DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "_1_DAL/1.0.0": {
+    "_2_BUS/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

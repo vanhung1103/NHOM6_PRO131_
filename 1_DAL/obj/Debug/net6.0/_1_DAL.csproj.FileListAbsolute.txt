@@ -99,3 +99,17 @@ C:\Users\ACER\Desktop\DU_AN_1\1_DAL\bin\Debug\net6.0\_1_DAL.dll
 C:\Users\ACER\Desktop\DU_AN_1\1_DAL\bin\Debug\net6.0\_1_DAL.pdb
 C:\Users\ACER\Desktop\DU_AN_1\1_DAL\obj\Debug\net6.0\_1_DAL.genruntimeconfig.cache
 C:\Users\ACER\Desktop\DU_AN_1\1_DAL\obj\Debug\net6.0\ref\_1_DAL.dll
+E:\gitt3\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.deps.json
+E:\gitt3\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.runtimeconfig.json
+E:\gitt3\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.dll
+E:\gitt3\NHOM6_PRO131_\1_DAL\bin\Debug\net6.0\_1_DAL.pdb
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.csproj.AssemblyReference.cache
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.AssemblyInfoInputs.cache
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.AssemblyInfo.cs
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.csproj.CoreCompileInputs.cache
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.dll
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\refint\_1_DAL.dll
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.pdb
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\_1_DAL.genruntimeconfig.cache
+E:\gitt3\NHOM6_PRO131_\1_DAL\obj\Debug\net6.0\ref\_1_DAL.dll

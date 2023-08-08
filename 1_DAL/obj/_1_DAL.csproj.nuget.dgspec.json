@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\Desktop\\DU_AN_1\\1_DAL\\_1_DAL.csproj": {}
+    "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\Desktop\\DU_AN_1\\1_DAL\\_1_DAL.csproj": {
+    "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\DU_AN_1\\1_DAL\\_1_DAL.csproj",
+        "projectUniqueName": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
         "projectName": "_1_DAL",
-        "projectPath": "C:\\Users\\ACER\\Desktop\\DU_AN_1\\1_DAL\\_1_DAL.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Desktop\\DU_AN_1\\1_DAL\\obj\\",
+        "projectPath": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+        "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
+        "outputPath": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
