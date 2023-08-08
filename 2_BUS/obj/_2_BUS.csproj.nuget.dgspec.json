@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\gitt3\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj": {}
+    "E:\\git4\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj": {}
   },
   "projects": {
-    "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
+    "E:\\git4\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+        "projectUniqueName": "E:\\git4\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
         "projectName": "_1_DAL",
-        "projectPath": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
+        "projectPath": "E:\\git4\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj",
         "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
-        "outputPath": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\obj\\",
+        "outputPath": "E:\\git4\\NHOM6_PRO131_\\1_DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,18 +81,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\gitt3\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj": {
+    "E:\\git4\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\gitt3\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj",
+        "projectUniqueName": "E:\\git4\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj",
         "projectName": "_2_BUS",
-        "projectPath": "E:\\gitt3\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj",
+        "projectPath": "E:\\git4\\NHOM6_PRO131_\\2_BUS\\_2_BUS.csproj",
         "packagesPath": "C:\\Users\\vanhu\\.nuget\\packages\\",
-        "outputPath": "E:\\gitt3\\NHOM6_PRO131_\\2_BUS\\obj\\",
+        "outputPath": "E:\\git4\\NHOM6_PRO131_\\2_BUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vanhu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
-                "projectPath": "E:\\gitt3\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj"
+              "E:\\git4\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj": {
+                "projectPath": "E:\\git4\\NHOM6_PRO131_\\1_DAL\\_1_DAL.csproj"
               }
             }
           }
@@ -166,7 +166,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

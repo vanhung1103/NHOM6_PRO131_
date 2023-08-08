@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MNzDxyWDCmshDpbQo5xeMOw6ccduC9TIm7xvUtpfFPXnnV8lRcDGFgAzlXD16wm433GGkumPt8QaUHERNsR+WA==",
+  "dgSpecHash": "mFLxSM1FhVcYC20ajFTxuKVnPiS3/n34MQnHd30BFPZy63M/NRsN7jSyBzJpIIgNr+0gC+Fx1DWf8y8h7auI/g==",
   "success": true,
-  "projectFilePath": "E:\\gittt\\NHOM6_PRO131_\\3_PL\\3_PL.csproj",
+  "projectFilePath": "E:\\git4\\NHOM6_PRO131_\\3_PL\\3_PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vanhu\\.nuget\\packages\\fontawesome.sharp\\5.8.2\\fontawesome.sharp.5.8.2.nupkg.sha512",
     "C:\\Users\\vanhu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
