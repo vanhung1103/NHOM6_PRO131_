@@ -1,4 +1,5 @@
 ﻿using _1_DAL.Models;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,9 @@ namespace _2_BUS.IServices
 {
     public interface ISizeServices
     {
-        string AddSize(Size size);
-        string UpdateSize(Size size);
-        string DeleteSize(Guid id);
-        List<Size> GetSizes();
-        Size GetSizeID(Guid id);
+        List<SizeView> Get();
+        string Add(SizeView obj);
+        string Remove(Guid obj);
+        string Update(SizeView obj);
     }
 }

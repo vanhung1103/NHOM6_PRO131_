@@ -1,4 +1,5 @@
 ﻿using _1_DAL.Models;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,9 @@ namespace _2_BUS.IServices
 {
     public interface ICategoryServices
     {
-        string AddCategory(Category category);
-        string UpdateCategory(Category category);
-        string DeleteCategory(Guid id);
-        List<Category> GetCategories();
-        Category GetCategoryID(Guid id);
+        List<CategoryView> Get();
+        string Add(CategoryView obj);
+        string Remove(Guid obj);
+        string Update(CategoryView obj);
     }
 }

@@ -31,12 +31,14 @@ namespace _1_DAL.Data
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
         #endregion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder.
 
-              UseSqlServer("Data Source=VANHUNG;Initial Catalog=E-comerences;Integrated Security=True"));
+              UseSqlServer("Data Source=TRANTRUNGDONG03\\SQLEXPRESS01;Initial Catalog=db1;Integrated Security=True"));
 
 
         }

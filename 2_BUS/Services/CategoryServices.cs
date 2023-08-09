@@ -2,6 +2,7 @@
 using _1_DAL.Models;
 using _1_DAL.Responsitory;
 using _2_BUS.IServices;
+using _2_BUS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,47 +14,56 @@ namespace _2_BUS.Services
     public class CategoryServices : ICategoryServices
     {
         IResCategory categoryres;
-        List<Category> categoriebus;
         public CategoryServices()
         {
             categoryres = new ResCategory();
-            categoriebus = new List<Category>();
         }
-        public string AddCategory(Category category)
+
+        public string Add(CategoryView obj)
         {
-            if (categoryres.AddCate(category))
+            if (obj == null) return "Thêm không thành công!";
+            var bill = new Category()
             {
-                return "Them thanh cong";
-            }
-            return "Thu lai";
+                Id = obj.Id,
+                Name = obj.Name,
+
+            };
+            if (categoryres.Add(bill)) return "Thêm  thành công!";
+            return "Thêm không thành công!";
         }
 
-        public string DeleteCategory(Guid id)
+        public List<CategoryView> Get()
         {
-            if (categoryres.DeleteCate(id))
+            List<CategoryView> lst = new List<CategoryView>();
+            lst =
+                (
+                from a in categoryres.GetAll()
+                select new CategoryView()
+                {
+                    Id = a.Id,
+                    Name = a.Name,
+                }
+                ).ToList();
+            return lst;
+        }
+
+        public string Remove(Guid obj)
+        {
+            if (obj == null) return "Xóa không thành công!";
+            if (categoryres.Remove(obj)) return "Xóa  thành công!";
+            return "Xóa không thành công!";
+        }
+
+        public string Update(CategoryView obj)
+        {
+            if (obj == null) return "Sửa không thành công!";
+            var bill = new Category()
             {
-                return "Xoa thanh cong";
-            }
-            return "Thu lai";
-        }
-
-        public List<Category> GetCategories()
-        {
-            return categoriebus = categoryres.GetCates().ToList();
-        }
-
-        public Category GetCategoryID(Guid id)
-        {
-            return categoryres.GetCateID(id);
-        }
-
-        public string UpdateCategory(Category category)
-        {
-            if (categoryres.UpdateCate(category))
-            {
-                return "Sua thanh cong";
-            }
-            return "Thu lai";
+                Id = obj.Id,
+                Name = obj.Name,
+            };
+            if (categoryres.Update(bill)) return "Sửa thành công!";
+            return "Sửa không thành công!";
         }
     }
 }
